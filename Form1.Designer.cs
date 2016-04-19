@@ -58,6 +58,7 @@
             this.button_add_attachment = new System.Windows.Forms.Button();
             this.listBox_attachment = new System.Windows.Forms.ListBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.tabControl_tracks.SuspendLayout();
             this.tabPage_video.SuspendLayout();
             this.tabPage_audio.SuspendLayout();
@@ -105,6 +106,7 @@
             this.button_down_video.TabIndex = 5;
             this.button_down_video.Text = "Вниз";
             this.button_down_video.UseVisualStyleBackColor = true;
+            this.button_down_video.Click += new System.EventHandler(this.button_down_video_Click);
             // 
             // button_up_video
             // 
@@ -115,6 +117,7 @@
             this.button_up_video.TabIndex = 4;
             this.button_up_video.Text = "Вверх";
             this.button_up_video.UseVisualStyleBackColor = true;
+            this.button_up_video.Click += new System.EventHandler(this.button_up_video_Click);
             // 
             // button_clear_video
             // 
@@ -125,6 +128,7 @@
             this.button_clear_video.TabIndex = 3;
             this.button_clear_video.Text = "Очистить";
             this.button_clear_video.UseVisualStyleBackColor = true;
+            this.button_clear_video.Click += new System.EventHandler(this.button_clear_video_Click);
             // 
             // button_del_video
             // 
@@ -135,6 +139,7 @@
             this.button_del_video.TabIndex = 2;
             this.button_del_video.Text = "Удалить";
             this.button_del_video.UseVisualStyleBackColor = true;
+            this.button_del_video.Click += new System.EventHandler(this.button_del_video_Click);
             // 
             // button_add_video
             // 
@@ -145,6 +150,7 @@
             this.button_add_video.TabIndex = 1;
             this.button_add_video.Text = "Добавить";
             this.button_add_video.UseVisualStyleBackColor = true;
+            this.button_add_video.Click += new System.EventHandler(this.button_add_video_Click);
             // 
             // listBox_video
             // 
@@ -182,6 +188,7 @@
             this.button_down_audio.TabIndex = 11;
             this.button_down_audio.Text = "Вниз";
             this.button_down_audio.UseVisualStyleBackColor = true;
+            this.button_down_audio.Click += new System.EventHandler(this.button_down_audio_Click);
             // 
             // button_up_audio
             // 
@@ -192,6 +199,7 @@
             this.button_up_audio.TabIndex = 10;
             this.button_up_audio.Text = "Вверх";
             this.button_up_audio.UseVisualStyleBackColor = true;
+            this.button_up_audio.Click += new System.EventHandler(this.button_up_audio_Click);
             // 
             // button_clear_audio
             // 
@@ -202,6 +210,7 @@
             this.button_clear_audio.TabIndex = 9;
             this.button_clear_audio.Text = "Очистить";
             this.button_clear_audio.UseVisualStyleBackColor = true;
+            this.button_clear_audio.Click += new System.EventHandler(this.button_clear_audio_Click);
             // 
             // button_del_audio
             // 
@@ -212,6 +221,7 @@
             this.button_del_audio.TabIndex = 8;
             this.button_del_audio.Text = "Удалить";
             this.button_del_audio.UseVisualStyleBackColor = true;
+            this.button_del_audio.Click += new System.EventHandler(this.button_del_audio_Click);
             // 
             // button_add_audio
             // 
@@ -222,6 +232,7 @@
             this.button_add_audio.TabIndex = 7;
             this.button_add_audio.Text = "Добавить";
             this.button_add_audio.UseVisualStyleBackColor = true;
+            this.button_add_audio.Click += new System.EventHandler(this.button_add_audio_Click);
             // 
             // listBox_audio
             // 
@@ -258,6 +269,7 @@
             this.button_down_subtitle.TabIndex = 11;
             this.button_down_subtitle.Text = "Вниз";
             this.button_down_subtitle.UseVisualStyleBackColor = true;
+            this.button_down_subtitle.Click += new System.EventHandler(this.button_down_subtitle_Click);
             // 
             // button_up_subtitle
             // 
@@ -268,6 +280,7 @@
             this.button_up_subtitle.TabIndex = 10;
             this.button_up_subtitle.Text = "Вверх";
             this.button_up_subtitle.UseVisualStyleBackColor = true;
+            this.button_up_subtitle.Click += new System.EventHandler(this.button_up_subtitle_Click);
             // 
             // button_clear_subtitle
             // 
@@ -278,6 +291,7 @@
             this.button_clear_subtitle.TabIndex = 9;
             this.button_clear_subtitle.Text = "Очистить";
             this.button_clear_subtitle.UseVisualStyleBackColor = true;
+            this.button_clear_subtitle.Click += new System.EventHandler(this.button_clear_subtitle_Click);
             // 
             // button_del_subtitle
             // 
@@ -288,6 +302,7 @@
             this.button_del_subtitle.TabIndex = 8;
             this.button_del_subtitle.Text = "Удалить";
             this.button_del_subtitle.UseVisualStyleBackColor = true;
+            this.button_del_subtitle.Click += new System.EventHandler(this.button_del_subtitle_Click);
             // 
             // button_add_subtitle
             // 
@@ -298,6 +313,7 @@
             this.button_add_subtitle.TabIndex = 7;
             this.button_add_subtitle.Text = "Добавить";
             this.button_add_subtitle.UseVisualStyleBackColor = true;
+            this.button_add_subtitle.Click += new System.EventHandler(this.button_add_subtitle_Click);
             // 
             // listBox_subtitle
             // 
@@ -334,6 +350,7 @@
             this.button_down__attachment.TabIndex = 11;
             this.button_down__attachment.Text = "Вниз";
             this.button_down__attachment.UseVisualStyleBackColor = true;
+            this.button_down__attachment.Click += new System.EventHandler(this.button_down__attachment_Click);
             // 
             // button_up_attachment
             // 
@@ -344,6 +361,7 @@
             this.button_up_attachment.TabIndex = 10;
             this.button_up_attachment.Text = "Вверх";
             this.button_up_attachment.UseVisualStyleBackColor = true;
+            this.button_up_attachment.Click += new System.EventHandler(this.button_up_attachment_Click);
             // 
             // button_clear_attachment
             // 
@@ -354,6 +372,7 @@
             this.button_clear_attachment.TabIndex = 9;
             this.button_clear_attachment.Text = "Очистить";
             this.button_clear_attachment.UseVisualStyleBackColor = true;
+            this.button_clear_attachment.Click += new System.EventHandler(this.button_clear_attachment_Click);
             // 
             // button_del_attachment
             // 
@@ -364,6 +383,7 @@
             this.button_del_attachment.TabIndex = 8;
             this.button_del_attachment.Text = "Удалить";
             this.button_del_attachment.UseVisualStyleBackColor = true;
+            this.button_del_attachment.Click += new System.EventHandler(this.button_del_attachment_Click);
             // 
             // button_add_attachment
             // 
@@ -374,6 +394,7 @@
             this.button_add_attachment.TabIndex = 7;
             this.button_add_attachment.Text = "Добавить";
             this.button_add_attachment.UseVisualStyleBackColor = true;
+            this.button_add_attachment.Click += new System.EventHandler(this.button_add_attachment_Click);
             // 
             // listBox_attachment
             // 
@@ -395,6 +416,10 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "Микшировать";
             this.button1.UseVisualStyleBackColor = true;
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // Form1
             // 
@@ -446,6 +471,7 @@
         private System.Windows.Forms.Button button_del_attachment;
         private System.Windows.Forms.Button button_add_attachment;
         private System.Windows.Forms.ListBox listBox_attachment;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
 
