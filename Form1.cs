@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Diagnostics;
 
 namespace Makina
 {
@@ -195,6 +196,30 @@ namespace Makina
                 list.RemoveAt(Index);
                 list.Insert(Index + 1, tr);
                 Tracks.SelectedIndex = Index + 1;
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string mkvmerge = "mkvmerge.exe";
+            string temp_file = Path.GetTempFileName() + ".bat";
+            if(this.folderBrowserDialog1.ShowDialog() == DialogResult.OK)
+            {
+                string out_path = this.folderBrowserDialog1.SelectedPath + "\\";
+                using (StreamWriter bat = new StreamWriter(temp_file))
+                {
+                    for (int i = 0; i < this.VideoTracks.Count; i++)
+                    {
+                        bat.WriteLine("{0} -o {1} {2} {3} {4}", mkvmerge, out_path + Path.GetFileNameWithoutExtension(this.VideoTracks[i].FileName) + ".mkv", this.VideoTracks[i].FullPath, this.AudioTracks[i].FullPath, this.SubtutleTracks[i].FullPath);
+                    }
+                    bat.Close();
+                }
+                Process myProcess = new Process();
+                myProcess.StartInfo.FileName = "cmd.exe";
+                myProcess.StartInfo.Arguments = @"/C " + temp_file;
+                //myProcess.StartInfo.WindowStyle = ProcessWindowStyle.Hidden;
+                //myProcess.StartInfo.CreateNoWindow = true;
+                myProcess.Start();
             }
         }
     }

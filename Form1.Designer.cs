@@ -59,6 +59,7 @@
             this.listBox_attachment = new System.Windows.Forms.ListBox();
             this.button1 = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.tabControl_tracks.SuspendLayout();
             this.tabPage_video.SuspendLayout();
             this.tabPage_audio.SuspendLayout();
@@ -416,6 +417,7 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "Микшировать";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // openFileDialog1
             // 
@@ -472,6 +474,7 @@
         private System.Windows.Forms.Button button_add_attachment;
         private System.Windows.Forms.ListBox listBox_attachment;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
     }
 }
 
