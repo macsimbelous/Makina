@@ -1,1 +1,9 @@
 C:\Users\macs\Source\Repos\Makina\bin\Debug\Makina.exe.config
+C:\Users\macs\Source\Repos\Makina\bin\Debug\Makina.exe
+C:\Users\macs\Source\Repos\Makina\bin\Debug\Makina.pdb
+C:\Users\macs\Source\Repos\Makina\obj\Debug\Makina.csprojResolveAssemblyReference.cache
+C:\Users\macs\Source\Repos\Makina\obj\Debug\Makina.Form1.resources
+C:\Users\macs\Source\Repos\Makina\obj\Debug\Makina.Properties.Resources.resources
+C:\Users\macs\Source\Repos\Makina\obj\Debug\Makina.csproj.GenerateResource.Cache
+C:\Users\macs\Source\Repos\Makina\obj\Debug\Makina.exe
+C:\Users\macs\Source\Repos\Makina\obj\Debug\Makina.pdb

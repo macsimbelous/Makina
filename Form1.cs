@@ -210,7 +210,9 @@ namespace Makina
                 {
                     for (int i = 0; i < this.VideoTracks.Count; i++)
                     {
-                        bat.WriteLine("{0} -o {1} {2} {3} {4}", mkvmerge, out_path + Path.GetFileNameWithoutExtension(this.VideoTracks[i].FileName) + ".mkv", this.VideoTracks[i].FullPath, this.AudioTracks[i].FullPath, this.SubtutleTracks[i].FullPath);
+                        //bat.WriteLine("{0} -o {1} {2} {3} {4}", mkvmerge, out_path + Path.GetFileNameWithoutExtension(this.VideoTracks[i].FileName) + ".mkv", this.VideoTracks[i].FullPath, this.AudioTracks[i].FullPath, this.SubtutleTracks[i].FullPath);
+                        bat.Write("\"{0}\" -o \"{1}\" \"{2}\"", mkvmerge, out_path + Path.GetFileNameWithoutExtension(this.VideoTracks[i].FileName) + ".mkv", this.VideoTracks[i].FullPath, this.AudioTracks[i].FullPath);
+                        bat.WriteLine();
                     }
                     bat.Close();
                 }
